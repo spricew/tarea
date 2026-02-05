@@ -80,7 +80,7 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen font-sans">
+    <div className="min-h-screen">
       <header className="sticky top-0 px-4 py-4 z-50
        bg-background ring ring-outlineVariant">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 justify-between">
