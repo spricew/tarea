@@ -15,7 +15,6 @@ export const PokemonCard: React.FC<Props> = ({ pokemon }) => {
   return (
     <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 p-4 flex flex-col items-center border border-gray-100">
       <div className="relative w-32 h-32 mb-4">
-        {/* Usamos img estándar para simplicidad, en prod usar next/image */}
         <img 
           src={pokemon.image} 
           alt={pokemon.name}

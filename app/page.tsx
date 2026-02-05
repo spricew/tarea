@@ -46,7 +46,6 @@ export default function Home() {
     fetchPokemons();
   }, []);
 
-  // Lógica de Filtrado Avanzado [cite: 11]
   const filteredPokemons = useMemo(() => {
     return pokemons.filter((poke) => {
       // Normalizar texto
@@ -54,25 +53,17 @@ export default function Home() {
       const pokeName = poke.name.toLowerCase();
       const pokeId = poke.id.toString();
 
-      // 1. Lógica Texto (Nombre o ID) [cite: 28, 29, 30]
       const matchesText = text === '' ? true : (pokeName.includes(text) || pokeId.includes(text));
 
-      // 2. Lógica Tipo [cite: 31]
       const matchesType = selectedType === '' ? true : poke.types.includes(selectedType);
 
       if (notMode) {
-        //  Si NOT está ACTIVADO: Exclusión.
-        // La lógica dice: "La búsqueda es exclusiva".
-        // Si busco "Fuego", quiero lo que NO sea fuego.
-        // Si busco "Pikachu", quiero lo que NO sea Pikachu.
-        
-        // Aplicamos NOT a los filtros que estén activos
+     
         const textResult = text === '' ? true : !matchesText;
         const typeResult = selectedType === '' ? true : !matchesType;
         
         return textResult && typeResult;
       } else {
-        //  Si NOT está DESACTIVADO: Inclusión estándar.
         return matchesText && matchesType;
       }
     });

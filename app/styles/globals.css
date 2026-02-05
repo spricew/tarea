@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+/* Esquema default CLARO (Light Scheme) */
+:root {
+  --sys-primary: #775A0B;
+  --sys-surfaceTint: #775A0B;
+  --sys-onPrimary: #FFFFFF;
+  --sys-primaryContainer: #FFDF9E;
+  --sys-onPrimaryContainer: #5B4300;
+  
+  --sys-secondary: #785A0B;
+  --sys-onSecondary: #FFFFFF;
+  --sys-secondaryContainer: #FFDEA0;
+  --sys-onSecondaryContainer: #5C4300;
+  
+  --sys-tertiary: #006A67;
+  --sys-onTertiary: #FFFFFF;
+  --sys-tertiaryContainer: #9CF1ED;
+  --sys-onTertiaryContainer: #00504D;
+  
+  --sys-error: #BA1A1A;
+  --sys-onError: #FFFFFF;
+  --sys-errorContainer: #FFDAD6;
+  --sys-onErrorContainer: #93000A;
+  
+  --sys-background: #FFFFFF;
+  --sys-onBackground: #1F1B13;
+  --sys-surface: #F5FAFB;
+  --sys-onSurface: #171D1E;
+  
+  --sys-surfaceVariant: #DAE4E5;
+  --sys-onSurfaceVariant: #3F484A;
+  --sys-outline: #6F797A;
+  --sys-outlineVariant: #BEC8C9;
+  
+  --sys-shadow: #000000;
+  --sys-scrim: #000000;
+  
+  --sys-inverseSurface: #2B3133;
+  --sys-inverseOnSurface: #ECF2F3;
+  --sys-inversePrimary: #E9C16C;
+  
+  --sys-primaryFixed: #FFDF9E;
+  --sys-onPrimaryFixed: #261A00;
+  --sys-primaryFixedDim: #E9C16C;
+  --sys-onPrimaryFixedVariant: #5B4300;
+  
+  --sys-secondaryFixed: #FFDEA0;
+  --sys-onSecondaryFixed: #261A00;
+  --sys-secondaryFixedDim: #EAC16C;
+  --sys-onSecondaryFixedVariant: #5C4300;
+  
+  --sys-tertiaryFixed: #9CF1ED;
+  --sys-onTertiaryFixed: #00201F;
+  --sys-tertiaryFixedDim: #80D5D1;
+  --sys-onTertiaryFixedVariant: #00504D;
+  
+  --sys-surfaceDim: #D5DBDC;
+  --sys-surfaceBright: #F5FAFB;
+  --sys-surfaceContainerLowest: #FFFFFF;
+  --sys-surfaceContainerLow: #EFF5F6;
+  --sys-surfaceContainer: #E9EFF0;
+  --sys-surfaceContainerHigh: #E3E9EA;
+  --sys-surfaceContainerHighest: #DEE3E5;
+}
+
+/* --------------------------------------------- */
+/* CONFIGURACIÓN DE TAILWIND (Mapeo a variables) */
+/* --------------------------------------------- */
+@theme {
+  --color-primary: var(--sys-primary);
+  --color-surfaceTint: var(--sys-surfaceTint);
+  --color-onPrimary: var(--sys-onPrimary);
+  --color-primaryContainer: var(--sys-primaryContainer);
+  --color-onPrimaryContainer: var(--sys-onPrimaryContainer);
+  
+  --color-secondary: var(--sys-secondary);
+  --color-onSecondary: var(--sys-onSecondary);
+  --color-secondaryContainer: var(--sys-secondaryContainer);
+  --color-onSecondaryContainer: var(--sys-onSecondaryContainer);
+  
+  --color-tertiary: var(--sys-tertiary);
+  --color-onTertiary: var(--sys-onTertiary);
+  --color-tertiaryContainer: var(--sys-tertiaryContainer);
+  --color-onTertiaryContainer: var(--sys-onTertiaryContainer);
+  
+  --color-error: var(--sys-error);
+  --color-onError: var(--sys-onError);
+  --color-errorContainer: var(--sys-errorContainer);
+  --color-onErrorContainer: var(--sys-onErrorContainer);
+  
+  --color-background: var(--sys-background);
+  --color-onBackground: var(--sys-onBackground);
+  --color-surface: var(--sys-surface);
+  --color-onSurface: var(--sys-onSurface);
+  
+  --color-surfaceVariant: var(--sys-surfaceVariant);
+  --color-onSurfaceVariant: var(--sys-onSurfaceVariant);
+  --color-outline: var(--sys-outline);
+  --color-outlineVariant: var(--sys-outlineVariant);
+  
+  --color-shadow: var(--sys-shadow);
+  --color-scrim: var(--sys-scrim);
+  
+  --color-inverseSurface: var(--sys-inverseSurface);
+  --color-inverseOnSurface: var(--sys-inverseOnSurface);
+  --color-inversePrimary: var(--sys-inversePrimary);
+  
+  --color-primaryFixed: var(--sys-primaryFixed);
+  --color-onPrimaryFixed: var(--sys-onPrimaryFixed);
+  --color-primaryFixedDim: var(--sys-primaryFixedDim);
+  --color-onPrimaryFixedVariant: var(--sys-onPrimaryFixedVariant);
+  
+  --color-secondaryFixed: var(--sys-secondaryFixed);
+  --color-onSecondaryFixed: var(--sys-onSecondaryFixed);
+  --color-secondaryFixedDim: var(--sys-secondaryFixedDim);
+  --color-onSecondaryFixedVariant: var(--sys-onSecondaryFixedVariant);
+  
+  --color-tertiaryFixed: var(--sys-tertiaryFixed);
+  --color-onTertiaryFixed: var(--sys-onTertiaryFixed);
+  --color-tertiaryFixedDim: var(--sys-tertiaryFixedDim);
+  --color-onTertiaryFixedVariant: var(--sys-onTertiaryFixedVariant);
+  
+  --color-surfaceDim: var(--sys-surfaceDim);
+  --color-surfaceBright: var(--sys-surfaceBright);
+  --color-surfaceContainerLowest: var(--sys-surfaceContainerLowest);
+  --color-surfaceContainerLow: var(--sys-surfaceContainerLow);
+  --color-surfaceContainer: var(--sys-surfaceContainer);
+  --color-surfaceContainerHigh: var(--sys-surfaceContainerHigh);
+  --color-surfaceContainerHighest: var(--sys-surfaceContainerHighest);
+}
+
+/* -------------------------------------------------- */
+/* PALETAS FIJAS (Valores absolutos del JSON nuevo)   */
+/* -------------------------------------------------- */
+@theme {
+  /* Primary Palette (#DFA800 seed) */
+  --color-ref-primary-0: #000000;
+  --color-ref-primary-10: #261A00;
+  --color-ref-primary-20: #3F2E00;
+  --color-ref-primary-30: #5B4300;
+  --color-ref-primary-40: #795900;
+  --color-ref-primary-50: #977100;
+  --color-ref-primary-60: #B78900;
+  --color-ref-primary-70: #D8A300;
+  --color-ref-primary-80: #F7BE26;
+  --color-ref-primary-90: #FFDF9E;
+  --color-ref-primary-95: #FFEFD4;
+  --color-ref-primary-99: #FFFBFF;
+  --color-ref-primary-100: #FFFFFF;
+
+  /* Secondary Palette */
+  --color-ref-secondary-0: #000000;
+  --color-ref-secondary-10: #251A01;
+  --color-ref-secondary-20: #3C2E11;
+  --color-ref-secondary-30: #544525;
+  --color-ref-secondary-40: #6D5C3A;
+  --color-ref-secondary-50: #877551;
+  --color-ref-secondary-60: #A28E68;
+  --color-ref-secondary-70: #BEA981;
+  --color-ref-secondary-80: #DAC49A;
+  --color-ref-secondary-90: #F8E0B4;
+  --color-ref-secondary-95: #FFEFD5;
+  --color-ref-secondary-100: #FFFFFF;
+
+   /* Neutral Palette (Grays) */
+  --color-ref-neutral-0: #000000;
+  --color-ref-neutral-10: #1C1B1B;
+  --color-ref-neutral-20: #313030;
+  --color-ref-neutral-40: #5F5E5E;
+  --color-ref-neutral-60: #929090;
+  --color-ref-neutral-80: #C9C6C5;
+  --color-ref-neutral-90: #E5E2E1;
+  --color-ref-neutral-95: #F4F0EF;
+  --color-ref-neutral-100: #FFFFFF;
+}
+
+
+/* DM Sans - Light */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans - Regular */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans - Medium */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans - SemiBold */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* DM Sans - Bold */
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* reduce motion if the user has it enabled (accessibility) */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  /* height: 100%; */
+  font: 16px "DM Sans", system-ui, Arial, Helvetica, sans-serif;
+  letter-spacing: var(--tracking-tight);
+  color: white;
+  background-color: var(--color-background);
+}
+
+@supports (corner-shape: squircle) {
+  .squircle {
+    border-radius: 2.5rem;
+    corner-shape: squircle;
+  }
+}
+
+/* *{
+  outline: red  solid 1px;
+  box-sizing: border-box;
+} */
