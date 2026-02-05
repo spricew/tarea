@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     const fetchPokemons = async () => {
       try {
-        const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=10');
+        const res = await fetch('https://pokeapi.co/api/v2/pokemon?limit=999');
         if (!res.ok) throw new Error('Error al conectar con la PokéAPI');
         const data = await res.json();
 
