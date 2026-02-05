@@ -80,25 +80,30 @@ export default function Home() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 font-sans">
-      <header className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-200 px-4 py-4">
+    <div className="min-h-screen font-sans">
+      <header className="sticky top-0 px-4 py-4 z-50
+       bg-background ring ring-outlineVariant">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-4 justify-between">
           
           <h1 className="text-2xl font-extrabold text-red-600 tracking-tighter">
-            Kanto<span className="text-gray-800">Tech</span>
+            Kanto<span className="text-onSurface">Tech</span>
           </h1>
 
           <div className="flex flex-col md:flex-row gap-4 w-full md:w-auto items-center">
             <input
               type="text"
               placeholder="Nombre o ID..."
-              className="w-full md:w-64 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none"
+              className="w-full md:w-64 px-4 py-2
+              border border-outlineVariant rounded-lg bg-surfaceContainerLowest text-onSurface
+              focus:outline-none"
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
             />
 
             <select
-              className="w-full md:w-48 px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:outline-none bg-white"
+              className="w-full md:w-48 px-4 py-2
+              border border-outlineVariant rounded-lg bg-surfaceContainerLowest text-onSurface
+              focus:outline-none"
               value={selectedType}
               onChange={(e) => setSelectedType(e.target.value)}
             >
