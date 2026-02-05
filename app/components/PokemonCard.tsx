@@ -1,4 +1,3 @@
-// components/PokemonCard.tsx
 import React from 'react';
 import { Pokemon, typeColors } from '../utils/types';
 
